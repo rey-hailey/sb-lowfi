@@ -1,0 +1,31 @@
+{
+  "_comment": "sb-lowfi-figma 화면 흐름 정의. lanes.order = Figma에서 위에서 아래로 쌓는 순서, chains = 흐름도 한 줄(왼쪽에서 오른쪽). exclude = 해당 시나리오에서 뺄 화면:플랫폼",
+  "exclude": [],
+  "pc": {
+    "title": "PC 시나리오",
+    "subtitle": "사용자 PC 폭(1000px) + 관리자(PC 전용). 화면 박스를 누르면 해당 화면으로 이동합니다.",
+    "lanes": [
+      {"tag": "[사용자]", "title": "사용자",
+       "order": ["SCR-001", "SCR-002"],
+       "chains": [
+         {"ids": ["SCR-001", "SCR-002"], "note": "로그인 후 스터디룸 목록 (목록은 모바일 전용이라 PC에서는 회색)"}
+       ]},
+      {"tag": "[관리자]", "title": "관리자 (PC 전용)",
+       "order": ["SCR-003"],
+       "chains": [
+         {"ids": ["SCR-001", "SCR-003"], "note": "관리자 계정으로 로그인하면 예약 관리"}
+       ]}
+    ]
+  },
+  "mo": {
+    "title": "Mobile 시나리오",
+    "subtitle": "사용자 모바일 폭(375px). 관리자는 PC 전용이라 없습니다.",
+    "lanes": [
+      {"tag": "[사용자]", "title": "사용자",
+       "order": ["SCR-001", "SCR-002"],
+       "chains": [
+         {"ids": ["SCR-001", "SCR-002"], "note": "로그인 후 스터디룸 목록"}
+       ]}
+    ]
+  }
+}

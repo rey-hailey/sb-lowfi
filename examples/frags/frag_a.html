@@ -1,0 +1,151 @@
+<!-- ============ SCR-001 ============ -->
+<div id="scr-001" class="screen-section">
+<h2>SCR-001 로그인</h2>
+<div class="meta">/login · 모바일+PC 반응형 · 전체 공개 · F-001, F-002 · API-001, API-002</div>
+<div class="row">
+<div>
+<p class="cap">PC 기본</p>
+<div class="pc">
+ <div class="chrome"><i></i><i></i><i></i><em>studyroom.example/login</em></div>
+ <div class="hdr" data-n="1"><span class="logo">StudyRoom</span><span class="sp"></span><span class="t">이용 안내</span><span class="t">문의하기</span></div>
+ <div style="background:var(--g1);padding:48px 0 56px;display:flex;justify-content:center">
+  <div class="card" style="width:400px;padding:28px">
+   <div class="hd" style="font-size:20px;text-align:center;margin-bottom:20px">스터디룸 예약에 로그인</div>
+   <div data-n="2" style="margin-bottom:12px"><div class="lbl">이메일</div><div class="inp">name@example.com</div></div>
+   <div data-n="3" style="margin-bottom:12px"><div class="lbl">비밀번호</div><div class="inp" style="justify-content:space-between">8자 이상 <span>보기</span></div></div>
+   <div style="display:flex;justify-content:space-between;align-items:center;margin:16px 0">
+    <span class="chk t" data-n="4"><i></i>로그인 유지</span><span class="link" data-n="5">비밀번호 찾기 &gt;</span></div>
+   <div class="btn p lg dis" style="width:100%" data-n="6">로그인</div>
+   <div class="s" style="text-align:center;margin:16px 0">또는</div>
+   <div style="display:flex;gap:10px" data-n="7"><span class="btn" style="flex:1">카카오로 시작</span><span class="btn" style="flex:1">구글로 시작</span></div>
+   <div style="text-align:center;margin-top:20px"><span class="t">아직 회원이 아니신가요?</span> <span class="link" data-n="8">회원가입 &gt;</span></div>
+  </div>
+ </div>
+ <div class="ftr"><span>이용약관</span><span>개인정보 처리방침</span></div>
+</div>
+</div>
+
+<div>
+<p class="cap">모바일 기본</p>
+<div class="mo">
+ <div class="chrome"><em>studyroom.example</em></div>
+ <div class="hdr" style="height:48px;padding:0 14px" data-n="1"><span class="logo">StudyRoom</span></div>
+ <div style="padding:28px 18px">
+  <div class="hd" style="font-size:19px;margin-bottom:20px">스터디룸 예약에 로그인</div>
+  <div data-n="2" style="margin-bottom:12px"><div class="lbl">이메일</div><div class="inp">name@example.com</div></div>
+  <div data-n="3" style="margin-bottom:12px"><div class="lbl">비밀번호</div><div class="inp" style="justify-content:space-between">8자 이상 <span>보기</span></div></div>
+  <div style="display:flex;justify-content:space-between;align-items:center;margin:16px 0">
+   <span class="chk t" data-n="4"><i></i>로그인 유지</span><span class="link" data-n="5">비밀번호 찾기 &gt;</span></div>
+  <div class="btn p lg dis" style="width:100%" data-n="6">로그인</div>
+  <div class="s" style="text-align:center;margin:16px 0">또는</div>
+  <div style="display:flex;flex-direction:column;gap:8px" data-n="7"><span class="btn lg">카카오로 시작</span><span class="btn lg">구글로 시작</span></div>
+  <div style="text-align:center;margin-top:20px"><span class="t">아직 회원이 아니신가요?</span> <span class="link" data-n="8">회원가입 &gt;</span></div>
+ </div>
+</div>
+</div>
+
+<div>
+<p class="cap">모바일 / 로그인 실패</p>
+<div class="mo">
+ <div class="chrome"><em>studyroom.example</em></div>
+ <div class="hdr" style="height:48px;padding:0 14px"><span class="logo">StudyRoom</span></div>
+ <div style="padding:28px 18px">
+  <div class="hd" style="font-size:19px;margin-bottom:16px">스터디룸 예약에 로그인</div>
+  <div class="warn" style="margin-bottom:14px;border-radius:8px" data-n="9">[오류] 이메일 또는 비밀번호가 맞지 않아요. (2/5회)</div>
+  <div style="margin-bottom:12px"><div class="lbl">이메일</div><div class="inp">name@example.com</div></div>
+  <div style="margin-bottom:12px"><div class="lbl">비밀번호</div><div class="inp" style="border:2px solid #8a5a00"></div></div>
+  <div class="btn p lg dis" style="width:100%;margin-top:16px">로그인</div>
+ </div>
+</div>
+</div>
+</div>
+<div class="spec"><table><thead><tr><th>No.</th><th>컴포넌트</th><th>설명 / 인터랙션</th></tr></thead><tbody>
+<tr><td><b>1</b></td><td>글로벌 헤더</td><td>로고를 누르면 홈</td></tr>
+<tr><td><b>2</b></td><td>이메일 입력</td><td>이메일 형식 검사, 포커스를 잃을 때 오류 표시</td></tr>
+<tr><td><b>3</b></td><td>비밀번호 입력</td><td>8자 이상, 눈 아이콘으로 표시/숨김</td></tr>
+<tr><td><b>4</b></td><td>로그인 유지</td><td>체크 시 30일 유지</td></tr>
+<tr><td><b>5</b></td><td>비밀번호 찾기</td><td>비밀번호 재설정 화면으로 이동</td></tr>
+<tr><td><b>6</b></td><td>로그인 버튼</td><td>두 입력이 모두 유효할 때만 활성</td></tr>
+<tr><td><b>7</b></td><td>소셜 로그인</td><td>카카오, 구글. 처음이면 약관 동의 후 가입</td></tr>
+<tr><td><b>8</b></td><td>회원가입 링크</td><td>회원가입 화면으로 이동</td></tr>
+<tr><td><b>9</b></td><td>오류 안내</td><td>로그인 실패 시 입력칸 위에 표시</td></tr></tbody></table></div>
+</div>
+
+<!-- ============ SCR-002 ============ -->
+<div id="scr-002" class="screen-section">
+<h2>SCR-002 스터디룸 목록</h2>
+<div class="meta">/rooms · 모바일 전용 · 로그인 사용자 · F-010, F-011, F-012 · API-010, API-012</div>
+<div class="row">
+<div><p class="cap">모바일 기본</p>
+<div class="mo"><div class="chrome"><em>studyroom.example/rooms</em></div>
+ <div class="hdr" style="height:48px;padding:0 14px"><span class="logo">StudyRoom</span><span class="sp"></span><span class="t">&#9776;</span></div>
+ <div style="padding:14px;display:flex;gap:10px">
+  <div class="inp" style="flex:1;justify-content:space-between" data-n="1">10/29 (목) <span>&#9662;</span></div>
+  <div class="inp" style="width:110px;justify-content:space-between" data-n="2">4명 <span>&#9662;</span></div></div>
+ <div style="padding:4px 14px 12px"><div class="seg" data-n="3"><span class="on">전체</span><span>4인</span><span>6인</span><span>8인</span></div></div>
+ <div style="padding:0 14px;display:flex;flex-direction:column;gap:10px">
+  <div class="card" data-n="4"><div style="display:flex;align-items:center"><span class="hd">A룸</span><span class="t" style="margin-left:8px">4인</span><span style="flex:1"></span><span class="badge f" data-n="5">&#9733; 즐겨찾기</span></div>
+   <div class="t" style="margin-top:6px">10:00부터 예약 가능</div><div class="ln" style="width:70%"></div></div>
+  <div class="card"><div style="display:flex;align-items:center"><span class="hd">B룸</span><span class="t" style="margin-left:8px">6인</span><span style="flex:1"></span><span class="badge">&#9734; 즐겨찾기</span></div>
+   <div class="t" style="margin-top:6px">13:00부터 예약 가능</div><div class="ln" style="width:60%"></div></div>
+  <div class="card g" style="opacity:.6"><div style="display:flex;align-items:center"><span class="hd">C룸</span><span class="t" style="margin-left:8px">8인</span></div>
+   <div class="t" style="margin-top:6px">[안내] 오늘 예약 마감</div></div>
+ </div>
+ <div class="tabs" style="margin-top:16px;border-top:1px solid var(--g3);justify-content:space-around" data-n="6"><span class="on">목록</span><span>내 예약</span><span>마이</span></div>
+</div></div>
+<div><p class="cap">모바일 / 빈 상태</p>
+<div class="mo"><div class="chrome"><em>studyroom.example/rooms</em></div>
+ <div class="hdr" style="height:48px;padding:0 14px"><span class="logo">StudyRoom</span><span class="sp"></span><span class="t">&#9776;</span></div>
+ <div style="padding:14px;display:flex;gap:10px">
+  <div class="inp" style="flex:1;justify-content:space-between">10/29 (목) <span>&#9662;</span></div>
+  <div class="inp" style="width:110px;justify-content:space-between">10명 <span>&#9662;</span></div></div>
+ <div style="padding:60px 24px;text-align:center" data-n="7"><div class="hd">[안내] 조건에 맞는 스터디룸이 없어요</div>
+  <div class="t" style="margin:8px 0 16px">날짜나 인원을 바꿔 보세요</div><span class="btn">필터 초기화</span></div>
+ <div class="tabs" style="margin-top:40px;border-top:1px solid var(--g3);justify-content:space-around"><span class="on">목록</span><span>내 예약</span><span>마이</span></div>
+</div></div>
+</div>
+<div class="spec"><table><thead><tr><th>No.</th><th>컴포넌트</th><th>설명 / 인터랙션</th></tr></thead><tbody>
+<tr><td><b>1</b></td><td>날짜 선택</td><td>오늘부터 14일 이내만 선택</td></tr>
+<tr><td><b>2</b></td><td>인원 선택</td><td>1~10명</td></tr>
+<tr><td><b>3</b></td><td>크기 필터</td><td>전체/4인/6인/8인, 하나만 선택</td></tr>
+<tr><td><b>4</b></td><td>스터디룸 카드</td><td>이름, 수용 인원, 가장 빠른 예약 가능 시간. 누르면 상세</td></tr>
+<tr><td><b>5</b></td><td>즐겨찾기</td><td>토글, 즐겨찾기한 방이 목록 위로</td></tr>
+<tr><td><b>6</b></td><td>하단 탭 바</td><td>목록 / 내 예약 / 마이</td></tr>
+<tr><td><b>7</b></td><td>빈 상태 안내</td><td>조건에 맞는 방이 없을 때 필터 초기화 버튼</td></tr></tbody></table></div>
+</div>
+
+<!-- ============ SCR-003 ============ -->
+<div id="scr-003" class="screen-section">
+<h2>SCR-003 예약 관리 (관리자)</h2>
+<div class="meta">/admin/reservations · PC 전용 · admin · F-030, F-031, F-032 · API-030, API-031</div>
+<p class="cap">PC 기본 (관리자)</p>
+<div class="pc tool">
+ <div class="chrome"><i></i><i></i><i></i><em>studyroom.example/admin/reservations</em></div>
+ <div class="hdr" style="height:44px"><span class="logo">StudyRoom 관리자</span><span class="sp"></span><span class="t">관리자 홍길동</span><span class="t">로그아웃</span></div>
+ <div style="display:flex;background:#e9ebf0">
+  <div class="sidenav" data-n="1"><div>대시보드</div><div class="on">예약 관리</div><div>스터디룸</div><div>회원</div></div>
+  <div style="flex:1;padding:16px;display:flex;flex-direction:column;gap:12px">
+   <div class="hd" style="font-size:18px">예약 관리</div>
+   <div class="card" style="display:flex;gap:10px;align-items:flex-end">
+    <div style="display:flex;gap:10px;flex:1" data-n="2">
+     <div><div class="lbl">기간</div><div class="inp" style="width:150px;justify-content:space-between">오늘 <span>&#9662;</span></div></div>
+     <div><div class="lbl">스터디룸</div><div class="inp" style="width:120px;justify-content:space-between">전체 <span>&#9662;</span></div></div>
+     <div><div class="lbl">상태</div><div class="inp" style="width:110px;justify-content:space-between">전체 <span>&#9662;</span></div></div>
+     <div style="flex:1"><div class="lbl">예약자</div><div class="inp">이름 또는 이메일</div></div></div>
+    <span class="btn p" data-n="3">조회</span></div>
+   <div class="card" data-n="4"><table class="f"><thead><tr><th>예약번호</th><th>스터디룸</th><th>예약자</th><th>시간</th><th>상태</th><th>관리</th></tr></thead><tbody>
+    <tr><td>R-1029-01</td><td>A룸</td><td>김OO</td><td>10:00~12:00</td><td><span class="badge" data-n="5">예약됨</span></td><td><span class="btn sm" data-n="6">취소</span> <span class="btn sm">노쇼</span></td></tr>
+    <tr><td>R-1029-02</td><td>B룸</td><td>이OO</td><td>13:00~15:00</td><td><span class="badge f">이용중</span></td><td><span class="btn sm dis">취소</span> <span class="btn sm">노쇼</span></td></tr>
+    <tr><td>R-1029-03</td><td>A룸</td><td>박OO</td><td>15:00~17:00</td><td><span class="badge">취소</span></td><td>-</td></tr></tbody></table></div>
+   <div style="display:flex;align-items:center"><div class="seg" data-n="7"><span>&lt;</span><span class="on">1</span><span>2</span><span>3</span><span>&gt;</span></div><span style="flex:1"></span><span class="btn" data-n="8">엑셀 다운로드</span></div>
+  </div></div></div>
+<div class="spec"><table><thead><tr><th>No.</th><th>컴포넌트</th><th>설명 / 인터랙션</th></tr></thead><tbody>
+<tr><td><b>1</b></td><td>사이드 메뉴</td><td>현재 메뉴 강조</td></tr>
+<tr><td><b>2</b></td><td>검색 필터</td><td>기간(기본 오늘), 스터디룸, 상태, 예약자 검색</td></tr>
+<tr><td><b>3</b></td><td>조회 버튼</td><td>필터 조건으로 다시 조회</td></tr>
+<tr><td><b>4</b></td><td>예약 표</td><td>예약번호, 스터디룸, 예약자, 시간, 상태. 열 머리글로 정렬</td></tr>
+<tr><td><b>5</b></td><td>상태 배지</td><td>예약됨/이용중/완료/취소/노쇼. 문구와 모양으로 구분</td></tr>
+<tr><td><b>6</b></td><td>관리 버튼</td><td>취소, 노쇼 처리. 처리 전 확인 창</td></tr>
+<tr><td><b>7</b></td><td>페이지 이동</td><td>20건 단위</td></tr>
+<tr><td><b>8</b></td><td>엑셀 다운로드</td><td>현재 조건의 전체 결과</td></tr></tbody></table></div>
+</div>

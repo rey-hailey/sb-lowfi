@@ -1,0 +1,10 @@
+{
+  "name": "sb-lowfi",
+  "version": "1.0.0",
+  "description": "화면설계서(.md, ASCII 와이어프레임)를 low-fi 와이어프레임 HTML로 그리고, 편집 가능한 PPTX와 Figma 화면설계서로 출력합니다.",
+  "author": { "name": "rey-hailey", "url": "https://github.com/rey-hailey" },
+  "homepage": "https://github.com/rey-hailey/sb-lowfi",
+  "repository": "https://github.com/rey-hailey/sb-lowfi",
+  "license": "MIT",
+  "keywords": ["wireframe", "storyboard", "pptx", "figma", "화면설계서"]
+}

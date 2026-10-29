@@ -1,0 +1,18 @@
+{
+  "name": "sb-lowfi",
+  "owner": { "name": "rey-hailey" },
+  "metadata": {
+    "description": "화면설계서(.md)를 low-fi 와이어프레임 PPTX와 Figma 화면설계서로 만드는 Claude Code 스킬",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "sb-lowfi",
+      "source": "./plugins/sb-lowfi",
+      "description": "화면설계서(.md, ASCII 와이어프레임) → low-fi 와이어프레임 HTML → 편집 가능한 PPTX / Figma 화면설계서",
+      "version": "1.0.0",
+      "category": "productivity",
+      "keywords": ["wireframe", "storyboard", "pptx", "figma", "화면설계서", "planning"]
+    }
+  ]
+}
